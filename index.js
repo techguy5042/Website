@@ -3,10 +3,10 @@ const app = express();
 const PORT = 4200;
 
 const operators = [
-	{ url: "add", doMath: (num1, num2) => { return parseFloat(num1) + parseFloat(num2) } },
-	{ url: "divide", doMath: (num1, num2) => { return num1 / num2 } },
-	{ url: "multiply", doMath: (num1, num2) => { return num1 * num2 } },
-	{ url: "subtract", doMath: (num1, num2) => { return num1 - num2} }
+	{ url: "add", doMath: (num1, num2) => parseFloat(num1) + parseFloat(num2) },
+	{ url: "divide", doMath: (num1, num2) => num1 / num2 },
+	{ url: "multiply", doMath: (num1, num2) => num1 * num2 },
+	{ url: "subtract", doMath: (num1, num2) => num1 - num2 }
 ]
 
 operators.forEach((e) => {
